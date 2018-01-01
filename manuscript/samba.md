@@ -3,7 +3,7 @@
 * <b>Samba</b> – Que disponibiliza o samba propriamente dito;<p>
 * <b>Kerberos</b> – Protocolo desenvolvido para prover altenticação em aplicações e serviços cliente/servidor;<p>
 * <b>Winbind</b> -  Proporciona uma integração de usuários Windows com o samba;<p>
-* <b>Smbclient</b> – Permite acessar compartilhamentos em outras máquinas.
+* <b>Smbclient</b> – Permite acessar compartilhamentos em outras máquinas.<p>
 
 <p style="text-align: justify;">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste, criei um Appliance no endereço:</p>
 
@@ -19,6 +19,7 @@
 
 <p align="center"><img src="images/samba/02_virtualbox.png"  width="800" height="493" align="middle"/></p>
 <h4 align="middle">Figura 02 - Alocação de Memória VM</h4>
+
 
 ## INSTALAÇÃO SAMBA
 
@@ -52,7 +53,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 ![](images/samba/10_domain_provision.png)
 <h4 align="middle">Figura 06 - Comando samba-tool</h4>
 
-<p style="text-align: justify;">Onde você informará qual realm do domínio, em nosso exemplo <b>aluno.com.br</b>, qual o domain, o mondo como o serviço samba está operando, se <b>DC</b> como controlador de domínio ou <b>standalone</b> somente para compartilhamento de arquivos, qual tipo de dns estará fazendo a resolução de nomes, em nosso exemplo estaremos utilizando o do próprio samba <b>SAMBA_INTERNAL</b> e qual endereço do dns estará redirecionando as solicitações de resolução de nome. Responda todas estas perguntas conforme Fig. 06.</p>
+<p style="text-align: justify;">Onde você informará qual realm do domínio, em nosso exemplo <b>aluno.com.br</b>, qual o domain, o modo como o serviço samba está operando, se <b>DC</b> como controlador de domínio ou <b>standalone</b> somente para compartilhamento de arquivos, qual tipo de dns estará fazendo a resolução de nomes, em nosso exemplo estaremos utilizando o do próprio samba <b>SAMBA_INTERNAL</b> e qual endereço do dns estará redirecionando as solicitações de resolução de nome. Responda todas estas perguntas conforme Fig. 06.</p>
 
 <p style="text-align: justify;">Ao concluir a configuração será gerado um novo smb.conf bem como o arquivo de configuração do kerberos e apresetnado um relatório conforme Fig. 07:</p>
 
