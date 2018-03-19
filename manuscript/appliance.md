@@ -5,6 +5,8 @@ Realizar o download do aplicativo <a href = https://www.virtualbox.org/wiki/Down
 
 Baixar o arquivo do <a href=https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=sharing>Appliance</a>. No qual é um arquivo que vem empacotado máquinas virtuais prontas para uso, em nosso laboratório existem duas, o srv-nassau e o cliente-nassau.
 
+https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=sharing
+
 Após concluir o download do Appliance, execute o arquivo, e será aberto uma janela do VirtualBox, aceite as opções defaults e aguarde a conclusão da importação das duas máquinas virtuais para seu ambiente.
 
 ## DIAGRAMA DE REDE
