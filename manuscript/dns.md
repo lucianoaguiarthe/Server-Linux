@@ -85,3 +85,5 @@ Para realizar os testes na zona de pesquisa inversa basta digitar o IP do host c
 ![](images/teste-inverso.png)
 
 
+
+
