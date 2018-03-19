@@ -5,7 +5,7 @@ Realizar o download do aplicativo VirtualBox no endereço descrito abaixo, confo
  <a href = https://www.virtualbox.org/wiki/Downloads> VirtualBox</a>
 
 Baixar o arquivo do Appliance no endereço descrito a seguir (Appliance é um arquivo que vem empacotado máquinas virtuais prontas para uso, em nosso laboratório existem duas, o srv-nassau e o cliente-nassau):
-<a href = https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=sharing> Download Appliance </a>
+<a href = https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=sharing>Download Appliance</a>
 
 Após concluir o download do Appliance, execute o arquivo e será aberto uma janela do VirtualBox, aceite as opções defaults e aguarde a conclusão da importação das duas máquinas virtuais para seu ambiente.
 
