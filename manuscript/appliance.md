@@ -3,7 +3,7 @@ Para que o aluno possa configurar o ambiente proposto no presente documento o me
 Realizar o download do aplicativo <a href = https://www.virtualbox.org/wiki/Downloads>VirtualBox</a>, conforme seu sistema operacional (A versão utilizada para criar o Appliance foi a 5.2.8).
 
 
-Baixar o arquivo do <a href = https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=sharing>Appliance</a>. No qual é um arquivo que vem empacotado máquinas virtuais prontas para uso, em nosso laboratório existem duas, o srv-nassau e o cliente-nassau.
+Baixar o arquivo do <a href=https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=sharing>Appliance</a>. No qual é um arquivo que vem empacotado máquinas virtuais prontas para uso, em nosso laboratório existem duas, o srv-nassau e o cliente-nassau.
 
 Após concluir o download do Appliance, execute o arquivo, e será aberto uma janela do VirtualBox, aceite as opções defaults e aguarde a conclusão da importação das duas máquinas virtuais para seu ambiente.
 
