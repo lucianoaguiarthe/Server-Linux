@@ -9,7 +9,7 @@ Após concluir o download do Appliance, execute o arquivo, e será aberto uma ja
 
 ## DIAGRAMA DE REDE
 
-Todo o ambiente prático realizado em sala de aula será baseado no ambiente virtual criado pelo VirtualBox, onde é utilizado o sistema operacional <b>Debian 9.3.0</b> em ambas as máquinas virtuais, conforme diagrama descrito na figura 1.
+Todo o ambiente prático realizado em sala de aula será baseado no ambiente virtual criado pelo VirtualBox, onde é utilizado o sistema operacional <b>Debian 9.3.0</b> em ambas as máquinas virtuais, conforme diagrama descrito na Figura 1.
 O Firewall denominado <b>srv-nassau</b> já possui os seguintes serviços instalados sem configuração:
 
  * DNS – Bind;
