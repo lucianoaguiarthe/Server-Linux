@@ -1,13 +1,11 @@
 # Appliance
 Para que o aluno possa configurar o ambiente proposto no presente documento o mesmo deve possuir um computador com no mínimo Processador <b>Quadcore</b> e Memória RAM de <b>3 Giga</b>.
-Realizar o download do aplicativo VirtualBox no endereço descrito abaixo, conforme seu sistema operacional (A versão utilizada para criar o Appliance foi a 5.1.30):
+Realizar o download do aplicativo <a href = https://www.virtualbox.org/wiki/Downloads>VirtualBox</a>, conforme seu sistema operacional (A versão utilizada para criar o Appliance foi a 5.2.8).
 
- <a href = https://www.virtualbox.org/wiki/Downloads> VirtualBox</a>
 
-Baixar o arquivo do Appliance no endereço descrito a seguir (Appliance é um arquivo que vem empacotado máquinas virtuais prontas para uso, em nosso laboratório existem duas, o srv-nassau e o cliente-nassau):
-<a href = https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=sharing>Download Appliance</a>
+Baixar o arquivo do <a href = https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=sharing>Appliance</a>. No qual é um arquivo que vem empacotado máquinas virtuais prontas para uso, em nosso laboratório existem duas, o srv-nassau e o cliente-nassau.
 
-Após concluir o download do Appliance, execute o arquivo e será aberto uma janela do VirtualBox, aceite as opções defaults e aguarde a conclusão da importação das duas máquinas virtuais para seu ambiente.
+Após concluir o download do Appliance, execute o arquivo, e será aberto uma janela do VirtualBox, aceite as opções defaults e aguarde a conclusão da importação das duas máquinas virtuais para seu ambiente.
 
 ## DIAGRAMA DE REDE
 
