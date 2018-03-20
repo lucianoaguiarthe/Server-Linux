@@ -19,7 +19,7 @@ Para instalação do apache versão 2, utilizaremos o comando:
 
 <h2 align="middle">Configuração do VirtualHost para hospedar http://www.aluno.com.br</h2>
 
-<p style="text-align: justify;">Inicialmente iremos disponibilizar uma página para testes no diretório que será hospedado a página, quando instalamos o apache por default já é criado um diretório para hospedagem /var/www/html, dentro deste diretório existe uma página de testes, iremos aproveitá-la, para criar nosso site, criaremos um diretório para colocar os arquivos do site, para isso execute o comando abaixo:</p>
+<p style="text-align: justify;">Inicialmente iremos disponibilizar uma página para testes no diretório que será hospedado a página, quando instalamos o apache por default já é criado um diretório para hospedagem /var/www/html, dentro deste diretório existe uma página de testes, iremos aproveitá-la, para criar nosso site, criaremos um diretório para colocar os arquivos do site, para isso execute o comando abaixo eliane:</p>
 <h4 align="middle">mkdir /var/www/html/site-www</h4>
 
 <p style="text-align: justify;">Realize uma cópia do index.html existente, e altere conforme sua necessidade, para que você possa identificar o site de testes, conforme comando abaixo:</p>
