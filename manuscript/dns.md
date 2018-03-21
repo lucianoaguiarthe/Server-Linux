@@ -23,7 +23,11 @@
  
  <B>nameserver 192.168.5.1        # que é o IP do nosso computador</B>
  
- 
+<p style="text-align: justify;">Considerando que em nosso ambiente uma das interfaces de rede recebe IP via dhcp o arquivo resolv.conf será alterado a cada conexão, para fixarmos o ip do DNS local devemos informar ao dhcp cliente que existe um servidor dns local, alterando o arquivo <b>/etc/dhcp/dhclient.conf</b> alterando as linhas descritas a seguir:</p>
+
+<h4 align="left">supersede domain-name "aluno.com.br";<p>prepend domain-name-servers 192.168.5.1;</h4>
+
+
 <h2 align="middle">Configuração da Zona de Pesquisa Direta</h2>
 
 <p style="text-align: justify;">A zona de pesquisa direta tem como função traduzir nomes em endereço IP, para criação da  zona aluno.com.br deveremos editar o arquivo named.conf.local localizado no diretório /etc/bind, conforme sequencia descrita a seguir:</p>
