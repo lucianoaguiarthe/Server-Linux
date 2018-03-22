@@ -106,7 +106,7 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 
 ![](images/interfaces.png)
 
-<p style="text-align: justify;">Para finalizar altere o arquivo <b>/etc/resolv.conf</b> apontado para o novo DNS 192.168.5.2, e  o arquivo <b>/etc/dhcp/dhclient.conf</b> nas linhas conforme descrito a seguir:
+<p style="text-align: justify;">Para finalizar altere o arquivo <b>/etc/resolv.conf</b> apontado para o novo DNS 192.168.5.2, e  o arquivo <b>/etc/dhcp/dhclient.conf</b> nas linhas conforme descrito a seguir:</p>
 
 <h4 align="left">supersede domain-name "aluno.com.br";<p>prepend domain-name-servers 192.168.5.1, 192.168.5.2;</h4>
 
