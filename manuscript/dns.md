@@ -84,10 +84,60 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 ![](images/db-inverso.png)
 
 <h4 align="middle">Realizando os testes da Zona de Pesquisa Inversa</h4>
+
 <p style="text-align: justify;">Para realizar os testes na zona de pesquisa inversa basta digitar o IP do host cadastrando na zona de pesquisa inversa após o comando nslookup, conforme exemplo abaixo:</p>
 
 ![](images/teste-inverso.png)
 
 
+<h2 align="middle">Configuração DNS Secundário</h2>
+
+<p style="text-align: justify;">O serviço de resolução de nomes em uma ambiente, obrigatoriamente devemos pensar em redundância, partindo deste pressuposto o DNS Secundário ocupa este papel, ele replica as zonas de um DNS Primário e responde as suas resolução. É importante pontuar que no DNS Secundário não são executadas operações de inserção de registros, suas zonas são somente de leitura respondendo as resoluções.</p>
+
+<p style="text-align: justify;">Para que possamos realizar a prática de configuração de um DNS Secundário devemos preparar o nosso ambiente. Inicialmente clone a Máquina Virtual <b>Debian 9.3 - Server</b>, para isso selecione a VM, e no menu <b>Máquina escolha</b> o item <b>Clonar</b>, conforme apresentado na imagem abaixo:
+</p>
+
+![](images/teste-inverso.png)
+
+
+<p style="text-align: justify;">Atribua o nome para a nova Máquina Virtual de <b>Debian 9.3 - Secundário</b>, marque a opção reinicializar endereço MAC, na janela seguinte marque a opção <b>Clone Completo</b> e conclua o clone da VM.</p>
+
+<p style="text-align: justify;">Devemos também ajustar o endereçamento ip do DNS Secundário, acesso o diretório <b>/etc/network</b> e modifique o arquivo <b>interfaces</b>, conforme descrito a seguir:</p>
+
+![](images/interfaces.png)
+
+<p style="text-align: justify;">Para finalizar altere o arquivo <b>/etc/resolv.conf</b> apontado para o novo DNS 192.168.5.2, e  o arquivo <b>/etc/dhcp/dhclient.conf</b> nas linhas conforme descrito a seguir:
+
+<h4 align="left">supersede domain-name "aluno.com.br";<p>prepend domain-name-servers 192.168.5.1, 192.168.5.2;</h4>
+
+<h3 align="middle">Configurando DNS Primário</h3>
+
+<p style="text-align: justify;">No DNS Primário devemos somente informar as nossas zonas já criadas anteriormente que existe um segundo servidor de nomes na rede. Para isso acesso o diretório de instação do bind <b>/etc/bind</b> e acrescente as linhas descritas a seguir referente ao novo servidor no arquivo <b>db.aluno.com.br</b>:</p>
+<h4 align="left">@		IN	NS	ns02.aluno.com.br.<p>
+ns02		IN	A	192.168.5.2</h4>
+
+<p style="text-align: justify;">O arquivo db.aluno.com.br depois de modificado deve ficar conforme imagem abaixo:</p>
+
+![](images/db-aluno-secundario.png)
+
+<h3 align="middle">Configurando DNS Secundário</h3>
+
+<p style="text-align: justify;">Abra a nova VM criada, e acesse o diretório de configuração do bind <b>/etc/bind</b>, considerando que clonamos a máquina já com algumas configurações de DNS devemos apagar as zonas criadas anteriormente no arquivo <b>named.conf.local</b>, e criar a zona secundária de acordo com imagem a seguir:</p>
+
+![](images/zona-secundaria.png)
+
+<p style="text-align: justify;">O arquivo db.aluno.com.br será copiado do DNS Primário, todavia por questão de organização devemos criar um diretório para salvar as zonas secundárias, este diretório será chamado de <b>slave</b>, e devemos criá-lo dentro do diretório <b>/etc/bind</b> conforme comando a seguir:</p>
+<h3 align="middle">mkdir slave</h3>
+
+<p style="text-align: justify;">Devemos ainda alterar o dono do diretório slave, para que o bind consiga salvar os arquivos de registro da zona secundária, de acordo com comando abaixo:
+
+<h3 align="middle">chown -R bind.bind /etc/bind/slave</h3>
+
+<p style="text-align: justify;">Após todas as alterações nos arquivos de configuração do Bind reinicie o serviço nos dois servidores:</p>
+
+<h3 align="middle">/etc/init.d/bind9 restart</h3>
+
+<p style="text-align: justify;">Saberemos se o DNS Secundário está funcionando, quando realizarmos uma consulta ao mesmo através do <b>nslookup</b> e fazer a resolução do nome:</p>
+![](images/teste-secundario.png)
 
 

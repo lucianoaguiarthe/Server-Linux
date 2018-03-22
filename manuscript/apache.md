@@ -73,7 +73,7 @@ Crie um arquivo de senha com usuário com o comando abaixo:
 
 <h4 align="middle">chown -R www-data.www-data /var/www/html/site-intranet</h4>
 
-<p style="text-align: justify;">Até o momento não estamos realizando nenhuma configuração do apache, somente disponibilizando o site para hospedagem, agora iremos criar o nosso arquivo de configuração do VirtualHost, é neste que será informado o diretório onde está localizado o site, o nome do site, porta, dentre outros. O arquivo do VirtualHost é criado no diretório /etc/apache2/sites-available, apara isso utilize o editor de texto de sua preferência criando um arquivo intranet no diretório citado, conforme comandos abaixo:</p>
+<p style="text-align: justify;">Crie o arquivo do VirtualHost no diretório <b>/etc/apache2/sites-available</b>, para isso utilize o editor de texto de sua preferência, conforme comandos abaixo:</p>
 
 <h4 align="middle">cd /etc/apache2/sites-available</h4>
 <h4 align="middle">nano intranet.conf</h4>
