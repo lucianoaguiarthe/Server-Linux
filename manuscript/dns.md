@@ -138,6 +138,8 @@ ns02		IN	A	192.168.5.2</h4>
 <h3 align="middle">/etc/init.d/bind9 restart</h3>
 
 <p style="text-align: justify;">Saberemos se o DNS Secundário está funcionando, quando realizarmos uma consulta ao mesmo através do <b>nslookup</b> e fazer a resolução do nome:</p>
+
 ![](images/teste-secundario.png)
+
 
 
