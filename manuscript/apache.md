@@ -3,7 +3,7 @@
 <h2 align="middle">INSTALAÇÃO E CONFIGURAÇÃO</h2>
 
 
-<p style="text-align: justify;">O  servidor web Apache é responsável por hospedar sites para uma rede, uma de suas principais vantagens é a grande quantidade de módulos disponíveis para diversos serviços como hospedagem de scripts cgi, páginas em php, páginas com criptografia, dentre outros.</p>
+<p style="text-align: justify;">O  servidor web Apache é responsável por hospedar sites para uma rede, uma de suas principais vantagens é a grande quantidade de módulos disponíveis para diversos serviços como hospedagem de scripts cgi, páginas em php, páginas com criptografia, dentre  outros.</p>
 
 Para instalação do apache versão 2, utilizaremos o comando:
 <h4 align="middle">apt-get install apache2</h2>
