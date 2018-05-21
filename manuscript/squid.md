@@ -107,7 +107,7 @@ http_access allow minharede
 
 2. 	Controlando o acesso pela rede destino:<p>
 acl outra_rede dst 192.168.17.0/24<p>
-http___access allow outra_rede 
+http_access allow outra_rede 
 
 3. Controlando acesso pelo nome de domínio de origem e destino:<p>
 acl dominio-interno srcdomain .meudominio.com.br <p>
@@ -115,10 +115,10 @@ acl dominio-externo .lafora.com.br <p>
 http_access allow dominio-interno dominio-externo
 
 4. Controlando o acesso usando autenticação de usuário: <p>
-acl usuarios proxy____auth REQUIRED<p>
-http____access allow usuarios 
+acl usuarios proxy_auth REQUIRED<p>
+http_access allow usuarios 
 
 5. Controlando acesso por exceção:<p>
-acl usuarioliberado proxy____auth aluno<p>
-acl bloqueados url_______regex -i bate-papo<p>
-http____access deny bloqueados !usuarioliberado
+acl usuarioliberado proxy_auth aluno<p>
+acl bloqueados url_regex -i bate-papo<p>
+http_access deny bloqueados !usuarioliberado
