@@ -3,7 +3,7 @@
 <h2 align="left">INTRODUÇÃO</h2>
 
 
-<p style='text-align: justify;'>O Squid é um serviço Proxy e cache que permite controlar o acesso dos usuários a páginas indevidas, bem como melhorar a velocidade de acesso através do cache, é uma aplicação multiplataforma podendo ser instalado no Windows rodando como serviço. O Squid suporta os protocolos HTTP, HTTPS, FTP, entre outros, encontra-se atualmente na versão 3.5, podendo disponibilizado o código fonte no site: http://www.squid-cache.org</p>
+<p style='text-align: justify;'>O Squid é um serviço Proxy e cache que permite controlar o acesso dos usuários a páginas indevidas, bem como melhorar a velocidade de acesso através do cache, é uma aplicação multiplataforma podendo ser instalado no Windows rodando como serviço. O Squid suporta os protocolos HTTP, HTTPS, FTP, entre outros, encontra-se atualmente na versão 3.5, podemos encontrar o código fonte no site: http://www.squid-cache.org</p>
 
 <h2 align="left">CARACTERÍSTICAS</h2>
 
