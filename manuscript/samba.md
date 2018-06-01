@@ -5,7 +5,7 @@
  * <b>Winbind</b> -  Proporciona uma integração de usuários Windows com o samba;
  * <b>Smbclient</b> – Permite acessar compartilhamentos em outras máquinas.
 
-<p style="text-align: justify;">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste criei um Appliance no endereço:</p>
+<p style="text-align: justify;">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste, criei um Appliance no endereço:</p>
 
 <p style="text-align: justify;">Este Appliance terá um servidor Samba <b>samba-dc</b>, um cliente para administrar graficamente o Samba a máquina <b>RSAT-PC</b>, no diretório c:\samba encontra-se o instalador, e a máquina <b>Cliente-PC</b>, para testes com o cliente, conforme diagrama abaixo:</p>
 
@@ -13,9 +13,9 @@
 <h4 align="middle">Figura 01 - Diagrama de Rede</h4>
 
 
-<p style="text-align: justify;">Conforme apresentado no diagrama de rede acima Fig. 01 o ip da interface <b>enp0s3</b> é 192.168.5.1, a senha tanto do usuário <b>root</b> como do usuário <b>aluno</b> é <b>123456</b></p>
+<p style="text-align: justify;">Conforme apresentado no diagrama de rede acima Fig. 01 o IP da interface <b>enp0s3</b> é 192.168.5.1, a senha tanto do usuário <b>root</b> como do usuário <b>aluno</b> é <b>123456</b></p>
 
-<p style="text-align: justify;">É importante pontuar que a memória reservada para as máquinas virtuais foram de 1255 MB, todavia podendo diminuir este tamanho conforme configuração máquina que estará executando o appliance, podemos observar a alocação de memória deseja na Fig. 02.</p>
+<p style="text-align: justify;">É importante pontuar que a memória reservada para as máquinas virtuais foram de 1255 MB, todavia podendo diminuir este tamanho, conforme configuração da máquina que estará executando o Appliance. Podemos observar a alocação de memória desejada na Fig. 02.</p>
 
 ![](images/samba/02_virtualbox.png)
 <h4 align="middle">Figura 02 - Alocação de Memória VM</h4>
@@ -26,13 +26,13 @@ Para instalação do Samba devemos baixar os pacotes: samba, kerbero, smbcliente
 
 <h4 align="middle">apt-get install samba krb5-config winbind smbclient</h4>
 
-Ao final da instalação é solicitado informações sobre configuração do kerberos, a primeira tela Fig. 03, solicita qual o nome do domínio, onde configuraremos aluno.com.br.
+Ao final da instalação são solicitadas informações sobre configuração do kerbero. A primeira tela Fig. 03, solicita qual o nome do domínio, o qual configuraremos <b>aluno.com.br</b>.
 
 ![](images/samba/07_kerberos.png)
 <h4 align="middle">Figura 03 - Realm Kerberos</h4>
 
 
-Será solicitado também o ip do servidor responsável pelo domínio, iremos configurar o endereço loopback, já que o kerberos está sendo executado no mesmo host do samba:
+Será solicitado também o IP do servidor responsável pelo domínio. Iremos configurar o endereço loopback, já que o kerberos está sendo executado no mesmo host do samba:
 
 ![](images/samba/08_kerberos.png)
 <h4 align="middle">Figura 04 - Servidor Kerberos</h4>
@@ -64,7 +64,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 ![](images/samba/12_smb.conf.png)
 <h4 align="middle">Figura 08 - Arquivo smb.conf</h4>
 
-<p style="text-align: justify;">Ao concluir toda a configuração podemos fazer um teste no samba utilizando o smbcliente conforme apresentado na Fig. 09</p>
+<p style="text-align: justify;">Ao concluir toda a configuração podemos fazer um teste no samba utilizando o smbcliente, conforme apresentado na Fig. 09</p>
 
 ![](images/samba/13_teste_samba.png)
 <h4 align="middle">Figura 09 - Teste Samba</h4>
@@ -79,19 +79,19 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <h4 align="middle">systemctl disable smbd.service nmbd.service winbind.service</h4>
 
-<p style="text-align: justify;">O serviço samba-ad-dc ao ser instalado ele vem mascarado, desta forma o mesmo é impedido de ser iniciado ou parado, para que possamos parar o iniciar o serviço manualmente devemos desmascarar o samba com o comando:</p>
+<p style="text-align: justify;">O serviço samba-ad-dc ao ser instalado ele vem mascarado, desta forma o mesmo é impedido de ser iniciado ou parado, para que possamos parar ou iniciar o serviço manualmente devemos desmascarar o samba com o comando:</p>
 
 <h4 align="middle">systemctl unmask samba-ad-dc.service</h4>
 
-<p style="text-align: justify;">Como o samba-dc-ad foi parado anteriormente devemos inicializá-lo:</p>
+<p style="text-align: justify;">Como o samba-dc-ad foi parado anteriormente, devemos inicializá-lo:</p>
 
 <h4 align="middle">systemctl start samba-ad-dc.service </h4>
 
-<p style="text-align: justify;">Habilite com o comando abaixo, o serviço samba-ad-dc para inicializar no boot:</p>
+<p style="text-align: justify;">Habilite com o comando abaixo o serviço samba-ad-dc para inicializar no boot:</p>
 
 <h4 align="middle"><b>systemctl enable samba-ad-dc.service</b></h4>
 
-<p style="text-align: justify;">Podemos ainda tirar a complexidade da senha usando o samba-tool, conforme apresentado na Fig. 10</p>
+<p style="text-align: justify;">Podemos ainda tirar a complexidade da senha usando o samba-tool, conforme apresentado na Fig. 10:</p>
 
 ![](images/samba/14_complexity_samba.png)
 <h4 align="middle">Figura 10 - Alteração Complexidade de Senha</h4>
@@ -201,7 +201,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 <h4 align="middle">Figura 28 - Configurações de Rede</h4>
 
 
-<p style="text-align: justify;">Ao abrirmos o painel de controle opção adicionar ou remover programas, podemos observar que não existe opção para remover nenhum programa do sistema operacional Fig. 29</p>
+<p style="text-align: justify;">Ao abrirmos o painel de controle, em adicionar ou remover programas, podemos observar que não existe opção para remover nenhum programa do sistema operacional Fig. 29</p>
 
 ![](images/samba/37_client_edit_software.png)
 <h4 align="middle">Figura 29 - Painel de Controle</h4>
