@@ -109,7 +109,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Antes de instalar o <b>RSAT</b> devemos ingressar o host no domínio. Acesse o painel de controle e vá em sistemas em segurança => sistemas, será exibido uma janela conforme Fig. 12:</p>
 
-![](images/samba/16_rsat_domain.png)
+<img src="images/samba/16_rsat_domain.png"  width="700" height="542" align="middle"/>
 <h4 align="middle">Figura 12 - Sistemas</h4>
 
 <p style="text-align: justify;">Na área de configurações de grupo de trabalho clique em alterar configurações, no qual será exibido a janela de propriedades do sistemas (Fig. 13). Clique no botão <b>Alterar</b> para informar o domínio que devemos ingressar.</p>
