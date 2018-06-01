@@ -62,6 +62,8 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 <p style="text-align: justify;">O arquivo smb.conf gerado no comando <b>samba-tool domain provision</b> é apresentado na Fig. 08 e corresponde a configuração inicial do samba:</p>
 
 ![](images/samba/12_smb.conf.png)
+<img src="images/samba/12_smb.conf.png"  width="700" height="307" align="middle"/>
+
 <h4 align="middle">Figura 08 - Arquivo smb.conf</h4>
 
 <p style="text-align: justify;">Ao concluir toda a configuração podemos fazer um teste no samba utilizando o smbcliente, conforme apresentado na Fig. 09</p>
