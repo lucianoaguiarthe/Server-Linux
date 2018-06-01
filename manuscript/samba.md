@@ -114,7 +114,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Na área de configurações de grupo de trabalho clique em alterar configurações, no qual será exibido a janela de propriedades do sistemas (Fig. 13). Clique no botão <b>Alterar</b> para informar o domínio que devemos ingressar.</p>
 
-![](images/samba/17_rsat_domain.png)
+<img src="images/samba/17_rsat_domain.png"  width="600" height="703" align="middle"/>
 <h4 align="middle">Figura 13 - Propiedades do Sistemas</h4>
 
 <p style="text-align: justify;">Na janela de alterações do domínio (Fig. 14), você terá a posibilidade de alterar o domínio e o nome do computador. Marque o item domínio e coloqueo o nome <b>aluno</b>.</p>
