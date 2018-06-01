@@ -124,7 +124,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Ao alterarmos o domínio, será solicitado um usuário e senha para ingressar no domínio. O usuário é o <b>Administrator</b> e a senha é a cadastrada quando foi aprovisionado o domínio (Fig. 15).</p>
 
-<img src="images/samba/19_rsat_domain.png"  width="550" height="389" align="middle"/>
+<img src="images/samba/19_rsat_domain.png"  width="38" height="269" align="middle"/>
 <h4 align="middle">Figura 15 - Senha Domínio</h4>
 
 <p style="text-align: justify;">Se a configuração feita no samba estiver toda correta, será apresentada uma janela de confirmação, dando boas vindas ao domínio, Fig. 16.</p>
