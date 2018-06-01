@@ -197,7 +197,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Ao tentarmos acessar as configurações de rede será apresentado uma tela de autenticação (Fig. 28). Considerando que o usuário <p>pedro</p> não tem permissão de acesso a estas configurações de rede</p>
 
-![](images/samba/36_client_edit_lan.png)
+<img src="images/samba/36_client_edit_lan.png"  width="300" height="258" align="middle"/>
 <h4 align="middle">Figura 28 - Configurações de Rede</h4>
 
 
