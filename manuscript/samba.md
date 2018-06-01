@@ -47,6 +47,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 <h4 align="middle">cp /etc/samba/smb.conf /etc/samba/smb.conf.original</h4>
 
 <p style="text-align: justify;">O passo seguinte deveremos configurar o samba como controlador de domínio, é importante pontuar que o nome do nosso domínio será <b>aluno.com.br</b> e o nome da máquina q está executando o samba é <b>samba-dc</b>, através do comando <b>samba-tool</b> conforme apesentado na Fig. 06:</p>
+<p style="text-align: justify;"><b>IMPORTANTE: A senha cadastrada deve possuir um nível alto de complexidade, use número, letras e símbolos, caso coloque uma senha simples dará um erro no final da instalação</b></p>
 
 ![](images/samba/10_domain_provision.png)
 <h4 align="middle">Figura 06 - Comando samba-tool</h4>
@@ -102,4 +103,15 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 ## CONFIGURAÇÃO DO RSAT
 
-<p style="text-align: justify;">O serviço samba pode ser administrado diretamente no host em que está instalado o serviço, através do seu arquivo de configuração e o utilitário <b>samba-tool</b> </p>
+<p style="text-align: justify;">O serviço samba pode ser administrado diretamente no host em que está instalado o serviço, através do seu arquivo de configuração e o utilitário <b>samba-tool</b>, ou podemos administrá-lo remotamente através do software RSAT instalado em um computador com sistema operacional Windows, que esteja previamente autenticado no domínio, você verá que a configuração passa a ser igual a do Windows Server. Em nosso diagrama Fig. 01 iremos administrar o samba a partir do host RSAT-PC que tem o IP 192.168.5.10.</p>
+<p style="text-align: justify;">
+
+<p style="text-align: justify;">Antes de instalar o <b>RSAT</b> devemos ingressar o host no domínio, acesse o painel de controle e vá em sistemas em segurança e sistemas, será exibido uma janela conforme Fig. 12</p>
+
+![](images/samba/16_rsat_domain.png)
+<h4 align="middle">Figura 12 - Sistemas</h4>
+
+<p style="text-align: justify;">Na área de configurações de grupo de trabalho clique em alterar configurações, no qual será exibido a janela de propriedades do sistemas Fig. 13, clique no botão <b>Alterar</b> para informar o domínio que deveremos ingressar.</p>
+
+![](images/samba/17_rsat_domain.png)
+<h4 align="middle">Figura 13 - Propiedades do Sistemas</h4>
