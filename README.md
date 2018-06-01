@@ -13,3 +13,4 @@ Esse material tem como objetivo apresentar a configuração dos Serviços em Amb
 1. [DNS Bind](manuscript/dns.md)
 1. [Servidor Apache](manuscript/apache.md)
 2. [Servidor Proxy Squid](manuscript/squid.md)
+3. [Servidor Samba](manuscript/samba.md)
