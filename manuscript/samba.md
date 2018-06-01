@@ -96,6 +96,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 <h4 align="middle">Figura 10 - Alteração Complexidade de Senha</h4>
 
 <p style="text-align: justify;">Caso o administrador de rede deseje, pode especificar o tamanho mínimo de uma senha, na Fig. 11, configuramos que o usuário tenha uma senha como no mínimo 6 caracteres ou símbolos</p>
+
 ![](images/samba/15_password_length.png)
 <h4 align="middle">Figura 11 - Tamanho da Senha</h4>
 
