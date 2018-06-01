@@ -205,5 +205,8 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 ![](images/samba/37_client_edit_software.png )
 <img src="images/samba/37_client_edit_software.png" alt="drawing" style="width: 300px;"/>
+
+<img src="images/samba/37_client_edit_software.png"  width="200" height="200"/>
+
 <h4 align="middle">Figura 29 - Painel de Controle</h4>
 
