@@ -88,7 +88,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Habilite com o comando abaixo, o serviço samba-ad-dc para inicializar no boot:</p>
 
-<h4 align="middle">systemctl enable samba-ad-dc.service</h4>
+<h4 align="middle"><b>systemctl enable samba-ad-dc.service</b></h4>
 
 <p style="text-align: justify;">Podemos ainda tirar a complexidade da senha usando o samba-tool, conforme apresentado na Fig. 10</p>
 
