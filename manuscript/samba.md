@@ -103,52 +103,52 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 ## CONFIGURAÇÃO DO RSAT
 
-<p style="text-align: justify;">O serviço samba pode ser administrado diretamente no host em que está instalado o serviço, através do seu arquivo de configuração e o utilitário <b>samba-tool</b>, ou podemos administrá-lo remotamente através do software RSAT instalado em um computador com sistema operacional Windows, que esteja previamente autenticado no domínio, você verá que a configuração passa a ser igual a do Windows Server. Em nosso diagrama Fig. 01 iremos administrar o samba a partir do host RSAT-PC que tem o IP 192.168.5.10.</p>
+<p style="text-align: justify;">O serviço samba pode ser administrado diretamente no host em que está instalado o serviço, ou podemos administrá-lo remotamente através do software RSAT instalado em um computador com sistema operacional Windows, que esteja previamente autenticado no domínio, você verá que a configuração passa a ser igual a do Windows Server. Em nosso diagrama, Fig. 01, iremos administrar o samba a partir do host RSAT-PC, que tem o IP 192.168.5.10.</p>
 <p style="text-align: justify;">
 
-<p style="text-align: justify;">Antes de instalar o <b>RSAT</b> devemos ingressar o host no domínio, acesse o painel de controle e vá em sistemas em segurança e sistemas, será exibido uma janela conforme Fig. 12</p>
+<p style="text-align: justify;">Antes de instalar o <b>RSAT</b> devemos ingressar o host no domínio, acesse o painel de controle e vá em sistemas em segurança => sistemas, será exibido uma janela conforme Fig. 12:</p>
 
 ![](images/samba/16_rsat_domain.png)
 <h4 align="middle">Figura 12 - Sistemas</h4>
 
-<p style="text-align: justify;">Na área de configurações de grupo de trabalho clique em alterar configurações, no qual será exibido a janela de propriedades do sistemas Fig. 13, clique no botão <b>Alterar</b> para informar o domínio que deveremos ingressar.</p>
+<p style="text-align: justify;">Na área de configurações de grupo de trabalho clique em alterar configurações, no qual será exibido a janela de propriedades do sistemas Fig. 13, clique no botão <b>Alterar</b>, para informar o domínio que devemos ingressar.</p>
 
 ![](images/samba/17_rsat_domain.png)
 <h4 align="middle">Figura 13 - Propiedades do Sistemas</h4>
 
-<p style="text-align: justify;">Na janela de alterações do domínio Fig. 14, você terá a posibilidade de alterar o domínio e o nome do computador, marque o item domínio e coloqueo o nome aluno.</p>
+<p style="text-align: justify;">Na janela de alterações do domínio Fig. 14, você terá a posibilidade de alterar o domínio e o nome do computador, marque o item domínio e coloqueo o nome <b>aluno</b>.</p>
 
 ![](images/samba/18_rsat_domain.png)
 <h4 align="middle">Figura 14 - Alteração de Domínio</h4>
 
-<p style="text-align: justify;">Ao alterarmos o domínio será solicatado um usuário e senha para ingressar no domínio, o usuário é o <b>Administrator</b> e a senha é a cadastrada quando foi aprovisionado o domínio</p>
+<p style="text-align: justify;">Ao alterarmos o domínio será solicatado um usuário e senha para ingressar no domínio, o usuário é o <b>Administrator</b> e a senha é a cadastrada quando foi aprovisionado o domínio, Fig. 15.</p>
 
 ![](images/samba/19_rsat_domain.png)
 <h4 align="middle">Figura 15 - Senha Domínio</h4>
 
-<p style="text-align: justify;">Se a configuração feita no samba estiver toda correta, será apresentado uma janela de confirmação dando boas vindas ao domínio Fig. 16.</p>
+<p style="text-align: justify;">Se a configuração feita no samba estiver toda correta, será apresentado uma janela de confirmação, dando boas vindas ao domínio, Fig. 16.</p>
 
 ![](images/samba/20_rsat_domain.png)
 <h4 align="middle">Figura 16 - Confirmação Domínio</h4>
 
-<p style="text-align: justify;">Conforme abordado anteriormente deve-se instalar o RSAT somente depois que o host fizer parte do domínio, no appliance disponilizado, o instalador do RSAT está localizado no diretório samba na unidade C, Fig. 17, faça a instação do mesmo.</p>
+<p style="text-align: justify;">Conforme abordado anteriormente deve-se instalar o RSAT somente depois que o host fizer parte do domínio, no appliance disponilizado, o instalador do RSAT está localizado em <b>c:\samba</b>, Fig. 17, faça a instação do mesmo.</p>
 
 ![](images/samba/21_folder_rsat.png)
 <h4 align="middle">Figura 17 - Diretório Instalador RSAT</h4>
 
-<p style="text-align: justify;">Ao concluir a instalação, será criado um item no menu iniciar Ferramentas Administrativa Fig. 18, que possuirá várias ferrametas para administração do domínio.</p> 
+<p style="text-align: justify;">Ao concluir a instalação, será criado um item no menu iniciar <b>Ferramentas Administrativa</b>, Fig. 18, que possuirá várias ferrametas para administração do domínio.</p> 
 
 ![](images/samba/22_user_pc_ad.png)
 <h4 align="middle">Figura 18 - Ferramentas Administrativas</h4>
 
-<p style="text-align: justify;">A primeira configuração a ser relizada é referente a usuários, selecione o item Usuários e Computadores do Active Directory, no qual abrirá uma janela para administração de usuário e unidades organizacionais Fig. 19.</p>
+<p style="text-align: justify;">A primeira configuração a ser relizada é referente a usuários, selecione o item Usuários e Computadores do Active Directory, no qual abrirá uma janela para administração de usuário e unidades organizacionais, Fig. 19.</p>
 
-<p style="text-align: justify;">As Unidades Organizacionais-OU são contêineres que armazenam informações sobre usuários e computadores, em nosso exemplo iremos criar uma OU para armazenar nossos novos usuários a ser cadastrado, para clique com o botão direito em cima do nome do domínio selecione no menu suspenso o item Novo => Unidade organizacional.</p>
+<p style="text-align: justify;">As Unidades Organizacionais-OU são contêineres que armazenam informações sobre usuários e computadores, em nosso exemplo iremos criar uma OU para armazenar nossos novos usuários a ser cadastrado, para isso clique com o botão direito em cima do nome do domínio selecione no menu suspenso o item Novo => Unidade organizacional.</p>
 
 ![](images/samba/23_create_ou.png)
 <h4 align="middle">Figura 19 - Usuários e Computadores do AD</h4>
 
-<p style="text-align: justify;">Vamos criar uma Unidade Organizacional chamada nassau, desmarque a opção proteger contêiner, conforme Fig. 20</p>
+<p style="text-align: justify;">Vamos criar uma Unidade Organizacional chamada nassau, desmarque a opção proteger contêiner, conforme Fig. 20:</p>
 
 ![](images/samba/24_create_ou.png)
 <h4 align="middle">Figura 20 - Unidade Organizacional</h4>
@@ -158,35 +158,35 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 ![](images/samba/25_create_user.png)
 <h4 align="middle">Figura 21 - Menu Usuário</h4>
 
-<p style="text-align: justify;">Na janela de cadastro do usário preencha os campos de nome e usuário conforme Fig. 22Para cadastrar um usuário no domínio devemos clicar com o botão direito em cima da Unidade Organizacional nassau e no menu suspenso selecionar Novo => Usuário.</p>
+<p style="text-align: justify;">Na janela de cadastro do usário, preencha os campos de nome e usuário conforme Fig. 22. Para cadastrar um usuário no domínio devemos clicar com o botão direito em cima da Unidade Organizacional nassau e no menu suspenso selecionar Novo => Usuário.</p>
 
 ![](images/samba/26_create_user.png)
 ![](images/samba/27_create_user.png)
 <h4 align="middle">Figura 22 - Cadastro Usuário</h4>
 
-<p style="text-align: justify;">Com o objetivo de implementar algumas restrições do sistema operacional dos usuários devemos criar as Group Police-GPO, as mesmas possuem diversas implementações para personalização dos sistemas operacionasi que fazem parte do domínio, como restrição ao painel de controle e configuração de rede. É importante pontuar que tal configuração é identica no Windows Server, todavia a possibilidade desta implementação no samba só veio a partir da versão 4.</p>
+<p style="text-align: justify;">Com o objetivo de implementar algumas restrições no sistema operacional dos usuários devemos criar as Group Police-GPO, as mesmas possuem diversas implementações para personalização dos sistemas operacionais que fazem parte do domínio, como restrição ao painel de controle e configuração de rede. É importante pontuar que tal configuração é identica no Windows Server, todavia a possibilidade desta implementação no samba só veio a partir da versão 4.</p>
 
-<p style="text-align: justify;">Para configurarmos uma GPO devemos acessar o menu de Ferramentas Administrativas e Gerenciamento de Políticas de Grupo Fig. 23</p>
+<p style="text-align: justify;">Para configurarmos uma GPO devemos acessar o menu de Ferramentas Administrativas e Gerenciamento de Políticas de Grupo, Fig. 23:</p>
 
 ![](images/samba/28_gpo.png)
 <h4 align="middle">Figura 23 - Cadastro Usuário</h4>
 
-<p style="text-align: justify;">Na criação da GPO devemos escolher o domínio (aluno.com.br), clicar com o botão direito em cima da OU nassau e no menu suspenso selecionar Criar uma GPO neste domínio e atribua um nome para ela, Fig. 24</p>
+<p style="text-align: justify;">Na criação da GPO devemos escolher o domínio (aluno.com.br), clicar com o botão direito em cima da OU nassau e no menu suspenso selecionar Criar uma GPO neste domínio e atribua um nome para ela, Fig. 24.</p>
 
 ![](images/samba/29_create_gpo.png)
 <h4 align="middle">Figura 24 - Criação GPO</h4>
 
-<p style="text-align: justify;">Devemos editar a GPO criada, clicando com o botão diretio em cima dela e nome menu suspenso selecionar a opção Editar, Fig. 25</p>
+<p style="text-align: justify;">Devemos editar a GPO criada, clicando com o botão diretio em cima dela e nome menu suspenso selecionar a opção Editar, Fig. 25.</p>
 
 ![](images/samba/30_edit_gpo.png)
 <h4 align="middle">Figura 25 - Edição GPO</h4>
 
-<p style="text-align: justify;">Vamos implementar uma restrição para os usuários da OU nassau no qual os mesmos serão impossibilitados de realar alterações na configuração avança TCP/IP para isso selecione configuração do usuário => Modelos Administrativos => Rede => Conexões de Rede e edite a opção do lado direito da janela <b>Proibir a configuração avançada do TCP/IP</b>, selecione opção habilitado, Fig. 26</p>
+<p style="text-align: justify;">Iremos implementar uma restrição para os usuários da OU nassau, no qual os mesmos serão impossibilitados de realizar alterações na configuração avança TCP/IP, para isso selecione configuração do usuário => Modelos Administrativos => Rede => Conexões de Rede e edite a opção do lado direito da janela <b>Proibir a configuração avançada do TCP/IP</b>, selecione opção habilitado, Fig. 26</p>
 
 ![](images/samba/31_edit_gpo_lan.png)
 <h4 align="middle">Figura 26 - GPO Configuração de Rede</h4>
 
-<p style="text-align: justify;">Iremos implementar ainda como exemplo uma restrição para os usuários da OU nassau no qual não estará disponível no painel de controle a opção adicionar ou remover programas, para isso selecione configuração do usuário =>Adicionar ou Remover Programas e edite a opção do lado direito da janela <b>Remover opção Adicionar/Remover Programas</b>, selecione opção habilitado, Fig. 27</p>
+<p style="text-align: justify;">Ainda como exemplo iremos ocultar a opção Adicionar ou Remover pogramas do Painel de Controle dos usuários da OU nassau, para isso selecione configuração do usuário =>Adicionar ou Remover Programas e edite a opção do lado direito da janela <b>Remover opção Adicionar/Remover Programas</b>, selecione opção habilitado, Fig. 27.</p>
 
 ![](images/samba/33_edit_gpo_programas.png)
 <h4 align="middle">Figura 27 - GPO Painel de Controle</h4>
@@ -195,13 +195,13 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Para testarmos a configuração do usuário iremos utilizar o host Cliente-PC, Fig. 01, devemos ingressar o mesmo no domínio conforme abordado anteriormente, e logar com o usuário pedro</p>
 
-<p style="text-align: justify;">Ao tentarmos acessar as configurações de rede será apresentado uma tela de autenticação Fig. 28, considerando que o usuário pedro não tem permissão de acesso a estas configurações de rede</p>
+<p style="text-align: justify;">Ao tentarmos acessar as configurações de rede será apresentado uma tela de autenticação, Fig. 28, considerando que o usuário pedro não tem permissão de acesso a estas configurações de rede</p>
 
 ![](images/samba/36_client_edit_lan.png)
 <h4 align="middle">Figura 28 - Configurações de Rede</h4>
 
 
-<p style="text-align: justify;">Ao abrirmos o painel de controle, em adicionar ou remover programas, podemos observar que não existe opção para remover nenhum programa do sistema operacional Fig. 29</p>
+<p style="text-align: justify;">Ao abrirmos o painel de controle, em adicionar ou remover programas, podemos observar que não existe opção para remover nenhum programa do sistema operacional, Fig. 29.</p>
 
 ![](images/samba/37_client_edit_software.png)
 <h4 align="middle">Figura 29 - Painel de Controle</h4>
