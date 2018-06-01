@@ -33,6 +33,7 @@ Ao final da instalação são solicitadas informações sobre configuração do 
 
 
 Será solicitado também o IP do servidor responsável pelo domínio. Iremos configurar o endereço loopback, já que o kerberos está sendo executado no mesmo host do samba:
+<img src="images/samba/08_kerberos.png"  width="700" height="205" align="middle"/>
 
 ![](images/samba/08_kerberos.png)
 <h4 align="middle">Figura 04 - Servidor Kerberos</h4>
@@ -195,7 +196,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Para testarmos a configuração do usuário, iremos utilizar o host Cliente-PC (Fig. 01). Devemos ingressar o mesmo no domínio, conforme abordado anteriormente, e logar com o usuário <b>pedro</b>.</p>
 
-<p style="text-align: justify;">Ao tentarmos acessar as configurações de rede será apresentado uma tela de autenticação (Fig. 28). Considerando que o usuário <p>pedro</p> não tem permissão de acesso a estas configurações de rede</p>
+<p style="text-align: justify;">Ao tentarmos acessar as configurações de rede será apresentado uma tela de autenticação (Fig. 28). Considerando que o usuário <b>pedro</b> não tem permissão de acesso a estas configurações de rede</p>
 
 <img src="images/samba/36_client_edit_lan.png"  width="300" height="258" align="middle"/>
 <h4 align="middle">Figura 28 - Configurações de Rede</h4>
