@@ -33,14 +33,13 @@ Ao final da instalação são solicitadas informações sobre configuração do 
 
 
 Será solicitado também o IP do servidor responsável pelo domínio. Iremos configurar o endereço loopback, já que o kerberos está sendo executado no mesmo host do samba:
-<img src="images/samba/08_kerberos.png"  width="700" height="205" align="middle"/>
 
-![](images/samba/08_kerberos.png)
+<img src="images/samba/08_kerberos.png"  width="700" height="205" align="middle"/>
 <h4 align="middle">Figura 04 - Servidor Kerberos</h4>
 
 E ainda é solictado o ip do servidor administrativo que também será o endereço loopback, conforme explicações anteriores:
 
-![](images/samba/09_kerberos.png)
+<img src="images/samba/09_kerberos.png"  width="700" height="205" align="middle"/>
 <h4 align="middle">Figura 05 - Servidor Administrativo</h4>
 
 Ao concluir a instalação devemos renomear o arquivo principal de configuração do samba o <b>smb.conf</b>, para que ao aprovisionar o domínio, seja gerado um novo smb.conf, de acordo com o comando a seguir:
