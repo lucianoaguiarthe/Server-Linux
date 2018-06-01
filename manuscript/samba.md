@@ -67,7 +67,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Ao concluir toda a configuração podemos fazer um teste no samba utilizando o smbcliente, conforme apresentado na Fig. 09</p>
 
-![](images/samba/13_teste_samba.png)
+<img src="images/samba/13_teste_samba.png"  width="700" height="278" align="middle"/>
 <h4 align="middle">Figura 09 - Teste Samba</h4>
 
 <p style="text-align: justify;">Faz-se necessário copiar o arquivo gerado pelo kerberos durante o aprovisionamento do domínio para a pasta <b>etc</b>:</p>
