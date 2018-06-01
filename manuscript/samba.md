@@ -119,7 +119,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Na janela de alterações do domínio (Fig. 14), você terá a posibilidade de alterar o domínio e o nome do computador. Marque o item domínio e coloqueo o nome <b>aluno</b>.</p>
 
-![](images/samba/18_rsat_domain.png)
+<img src="images/samba/18_rsat_domain.png"  width="400" height="469" align="middle"/>
 <h4 align="middle">Figura 14 - Alteração de Domínio</h4>
 
 <p style="text-align: justify;">Ao alterarmos o domínio, será solicitado um usuário e senha para ingressar no domínio. O usuário é o <b>Administrator</b> e a senha é a cadastrada quando foi aprovisionado o domínio (Fig. 15).</p>
