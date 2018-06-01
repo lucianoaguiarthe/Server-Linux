@@ -15,9 +15,9 @@
 
 <p style="text-align: justify;">Conforme apresentado no diagrama de rede acima Fig. 01 o ip da interface <b>enp0s3</b> é 192.168.5.1, a senha tanto do usuário <b>root</b> como do usuário <b>aluno</b> é <b>123456</b></p>
 
-<p style="text-align: justify;">É importante pontuar que a memória reservada para as máquinas virtuais foram de 1255 MB, todavia podendo diminuir este tamanho conforme configuração máquina que estará executando o appliance, podemos observar a alocação de memória deseja na Fig. 02.<p>
+<p style="text-align: justify;">É importante pontuar que a memória reservada para as máquinas virtuais foram de 1255 MB, todavia podendo diminuir este tamanho conforme configuração máquina que estará executando o appliance, podemos observar a alocação de memória deseja na Fig. 02.</p>
 
-![](images/samba/02 - virtualbox.png)
+![](images/samba/02_virtualbox.png)
 <h4 align="middle">Figura 02 - Alocação de Memória VM</h4>
 
 ## INSTALAÇÃO SAMBA
@@ -28,18 +28,18 @@ Para instalação do Samba devemos baixar os pacotes: samba, kerbero, smbcliente
 
 Ao final da instalação é solicitado informações sobre configuração do kerberos, a primeira tela Fig. 03, solicita qual o nome do domínio, onde configuraremos aluno.com.br.
 
-![](images/samba/07 - kerberos.png)
+![](images/samba/07_kerberos.png)
 <h4 align="middle">Figura 03 - Realm Kerberos</h4>
 
 
 Será solicitado também o ip do servidor responsável pelo domínio, iremos configurar o endereço loopback, já que o kerberos está sendo executado no mesmo host do samba:
 
-![](images/samba/08 - kerberos.png)
+![](images/samba/08_kerberos.png)
 <h4 align="middle">Figura 04 - Servidor Kerberos</h4>
 
 E ainda é solictado o ip do servidor administrativo que também será o endereço loopback, conforme explicações anteriores:
 
-![](images/samba/09 - kerberos.png)
+![](images/samba/09_kerberos.png)
 <h4 align="middle">Figura 05 - Servidor Administrativo</h4>
 
 Ao concluir a instalação devemos renomear o arquivo principal de configuração do samba o <b>smb.conf</b>, para que ao aprovisionar o domínio, seja gerado um novo smb.conf, de acordo com o comando a seguir:
@@ -48,25 +48,25 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">O passo seguinte deveremos configurar o samba como controlador de domínio, é importante pontuar que o nome do nosso domínio será <b>aluno.com.br</b> e o nome da máquina q está executando o samba é <b>samba-dc</b>, através do comando <b>samba-tool</b> conforme apesentado na Fig. 06:</p>
 
-![](images/samba/10 - domain_provision.png)
+![](images/samba/10_domain_provision.png)
 <h4 align="middle">Figura 06 - Comando samba-tool</h4>
 
 <p style="text-align: justify;">Onde você informará qual realm do domínio, em nosso exemplo <b>aluno.com.br</b>, qual o domain, o mondo como o serviço samba está operando, se <b>DC</b> como controlador de domínio ou <b>standalone</b> somente para compartilhamento de arquivos, qual tipo de dns estará fazendo a resolução de nomes, em nosso exemplo estaremos utilizando o do próprio samba <b>SAMBA_INTERNAL</b> e qual endereço do dns estará redirecionando as solicitações de resolução de nome. Responda todas estas perguntas conforme Fig. 06.</p>
 
 <p style="text-align: justify;">Ao concluir a configuração será gerado um novo smb.conf bem como o arquivo de configuração do kerberos e apresetnado um relatório conforme Fig. 07:</p>
 
-![](images/samba/11 - domain_provision.png)
-<h4 align="middle">Figura 11 - domain_provision</h4>
+![](images/samba/11_domain_provision.png)
+<h4 align="middle">Figura 07 - domain_provision</h4>
 
-<p style="text-align: justify;">O arquivo smb.conf gerado no comando <b>samba-tool domain provision</b> é apresentado na Fig. 12 e corresponde a configuração inicial do samba:</p>
+<p style="text-align: justify;">O arquivo smb.conf gerado no comando <b>samba-tool domain provision</b> é apresentado na Fig. 08 e corresponde a configuração inicial do samba:</p>
 
-![](images/samba/12 - smb.conf.png)
-<h4 align="middle">Figura 12 - Arquivo smb.conf</h4>
+![](images/samba/12_smb.conf.png)
+<h4 align="middle">Figura 08 - Arquivo smb.conf</h4>
 
-<p style="text-align: justify;">Ao concluir toda a configuração podemos fazer um teste no samba utilizando o smbcliente conforme apresentado na Fig13.</p>
+<p style="text-align: justify;">Ao concluir toda a configuração podemos fazer um teste no samba utilizando o smbcliente conforme apresentado na Fig. 09</p>
 
-![](images/samba/13 - teste_samba.png)
-<h4 align="middle">Figura 13 - Teste Samba</h4>
+![](images/samba/13_teste_samba.png)
+<h4 align="middle">Figura 09 - Teste Samba</h4>
 
 <p style="text-align: justify;">Faz-se necessário copiar o arquivo gerado pelo kerberos durante o aprovisionamento do domínio para a pasta <b>etc</b>:</p>
 <h4 align="middle">cp /var/lib/samba/private/krb5.conf /etc/</h4>
@@ -90,14 +90,14 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <h4 align="middle">systemctl enable samba-ad-dc.service</h4>
 
-<p style="text-align: justify;">Podemos ainda tirar a complexidade da senha usando o samba-tool, conforme apresentado na Fig.14</p>
+<p style="text-align: justify;">Podemos ainda tirar a complexidade da senha usando o samba-tool, conforme apresentado na Fig. 10</p>
 
-![](images/samba/14 - complexity_samba.png)
-<h4 align="middle">Figura 14 - Alteração Complexidade de Senha</h4>
+![](images/samba/14_complexity_samba.png)
+<h4 align="middle">Figura 10 - Alteração Complexidade de Senha</h4>
 
-<p style="text-align: justify;">Caso o administrador de rede deseje, pode especificar o tamanho mínimo de uma senha, na Fig. 15, configuramos que o usuário tenha uma senha como no mínimo 6 caracteres ou símbolos</p>
-![](images/samba/15 - password_length.png)
-<h4 align="middle">Figura 15 - Tamanho da Senha</h4>
+<p style="text-align: justify;">Caso o administrador de rede deseje, pode especificar o tamanho mínimo de uma senha, na Fig. 11, configuramos que o usuário tenha uma senha como no mínimo 6 caracteres ou símbolos</p>
+![](images/samba/15_password_length.png)
+<h4 align="middle">Figura 11 - Tamanho da Senha</h4>
 
 ##CONFIGURAÇÃO DO RSAT
 <p style="text-align: justify;">
