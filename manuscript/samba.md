@@ -101,4 +101,4 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 <h4 align="middle">Figura 11 - Tamanho da Senha</h4>
 
 ##CONFIGURAÇÃO DO RSAT
-<p style="text-align: justify;">
+<p style="text-align: justify;">O serviço samba pode ser administrado diretamente no host em que está instalado o serviço, através do seu arquivo de configuração e o utilitário <b>samba-tool</b> </p>
