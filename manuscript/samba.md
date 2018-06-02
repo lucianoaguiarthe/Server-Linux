@@ -129,7 +129,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Se a configuração feita no samba estiver toda correta, será apresentada uma janela de confirmação, dando boas vindas ao domínio, Fig. 16.</p>
 
-![](images/samba/20_rsat_domain.png)
+<img src="images/samba/20_rsat_domain.png"  width="700" height="388" align="middle"/>
 <h4 align="middle">Figura 16 - Confirmação Domínio</h4>
 
 <p style="text-align: justify;">Conforme abordado anteriormente, deve-se instalar o RSAT somente depois que o host fizer parte do domínio, no Appliance disponilizado, o instalador do RSAT está localizado em <b>c:\samba</b>, Fig. 17. Faça a instação do mesmo.</p>
