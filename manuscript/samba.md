@@ -204,6 +204,6 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Ao abrirmos o painel de controle, em adicionar ou remover programas, podemos observar que não existe opção para remover nenhum programa do sistema operacional, conforme mostra a Fig. 29.</p>
 
-<img src="images/samba/37_client_edit_software.png"  width="700" height="525" align="middle"/>
+<div style="text-align:center"><img src="images/samba/37_client_edit_software.png"  width="700" height="525" align="middle"/></div>
 <h4 align="middle">Figura 29 - Painel de Controle</h4>
 
