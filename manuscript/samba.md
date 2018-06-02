@@ -34,12 +34,12 @@ Ao final da instalação são solicitadas informações sobre configuração do 
 
 Será solicitado também o IP do servidor responsável pelo domínio. Iremos configurar o endereço loopback, já que o kerberos está sendo executado no mesmo host do samba:
 
-<img src="images/samba/08_kerberos.png"  width="700" height="205" align="middle"/>
+<p align="center"><img src="images/samba/08_kerberos.png"  width="700" height="205" align="middle"/></p>
 <h4 align="middle">Figura 04 - Servidor Kerberos</h4>
 
 E ainda é solictado o ip do servidor administrativo que também será o endereço loopback, conforme explicações anteriores:
 
-<img src="images/samba/09_kerberos.png"  width="700" height="205" align="middle"/>
+<p align="center"><img src="images/samba/09_kerberos.png"  width="700" height="205" align="middle"/></p>
 <h4 align="middle">Figura 05 - Servidor Administrativo</h4>
 
 Ao concluir a instalação devemos renomear o arquivo principal de configuração do samba o <b>smb.conf</b>, para que ao aprovisionar o domínio, seja gerado um novo smb.conf, de acordo com o comando a seguir:
@@ -61,7 +61,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">O arquivo smb.conf gerado no comando <b>samba-tool domain provision</b> é apresentado na Fig. 08 e corresponde a configuração inicial do samba:</p>
 
-<img src="images/samba/12_smb.conf.png"  width="700" height="307" align="middle"/>
+<p align="center"><img src="images/samba/12_smb.conf.png"  width="700" height="307" align="middle"/></p>
 
 <h4 align="middle">Figura 08 - Arquivo smb.conf</h4>
 
@@ -109,27 +109,27 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Antes de instalar o <b>RSAT</b> devemos ingressar o host no domínio. Acesse o painel de controle e vá em sistemas em segurança => sistemas, será exibido uma janela conforme Fig. 12:</p>
 
-<img src="images/samba/16_rsat_domain.png"  width="700" height="542" align="middle"/>
+<p align="center"><img src="images/samba/16_rsat_domain.png"  width="700" height="542" align="middle"/></p>
 <h4 align="middle">Figura 12 - Sistemas</h4>
 
 <p style="text-align: justify;">Na área de configurações de grupo de trabalho clique em alterar configurações, no qual será exibido a janela de propriedades do sistemas (Fig. 13). Clique no botão <b>Alterar</b> para informar o domínio que devemos ingressar.</p>
 
-<img src="images/samba/17_rsat_domain.png"  width="400" height="469" align="middle"/>
+<p align="center"><img src="images/samba/17_rsat_domain.png"  width="400" height="469" align="middle"/></p>
 <h4 align="middle">Figura 13 - Propiedades do Sistemas</h4>
 
 <p style="text-align: justify;">Na janela de alterações do domínio (Fig. 14), você terá a posibilidade de alterar o domínio e o nome do computador. Marque o item domínio e coloqueo o nome <b>aluno</b>.</p>
 
-<img src="images/samba/18_rsat_domain.png"  width="400" height="469" align="middle"/>
+<p align="center"><img src="images/samba/18_rsat_domain.png"  width="400" height="469" align="middle"/></p>
 <h4 align="middle">Figura 14 - Alteração de Domínio</h4>
 
 <p style="text-align: justify;">Ao alterarmos o domínio, será solicitado um usuário e senha para ingressar no domínio. O usuário é o <b>Administrator</b> e a senha é a cadastrada quando foi aprovisionado o domínio (Fig. 15).</p>
 
-<img src="images/samba/19_rsat_domain.png"  width="380" height="269" align="middle"/>
+<p align="center"><img src="images/samba/19_rsat_domain.png"  width="380" height="269" align="middle"/></p>
 <h4 align="middle">Figura 15 - Senha Domínio</h4>
 
 <p style="text-align: justify;">Se a configuração feita no samba estiver toda correta, será apresentada uma janela de confirmação, dando boas vindas ao domínio, Fig. 16.</p>
 
-<img src="images/samba/20_rsat_domain.png"  width="700" height="388" align="middle"/>
+<p align="center"><img src="images/samba/20_rsat_domain.png"  width="700" height="388" align="middle"/></p>
 <h4 align="middle">Figura 16 - Confirmação Domínio</h4>
 
 <p style="text-align: justify;">Conforme abordado anteriormente, deve-se instalar o RSAT somente depois que o host fizer parte do domínio, no Appliance disponilizado, o instalador do RSAT está localizado em <b>c:\samba</b>, Fig. 17. Faça a instação do mesmo.</p>
@@ -151,7 +151,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Vamos criar uma Unidade Organizacional chamada nassau, desmarque a opção proteger contêiner, conforme Fig. 20:</p>
 
-<img src="images/samba/24_create_ou.png"  width="450" height="384" align="middle"/>
+<p align="center"><img src="images/samba/24_create_ou.png"  width="450" height="384" align="middle"/></p>
 <h4 align="middle">Figura 20 - Unidade Organizacional</h4>
 
 <p style="text-align: justify;">Para cadastrar um usuário no domínio devemos clicar com o botão direito em cima da Unidade Organizacional nassau e no menu suspenso selecionar Novo => Usuário.</p>
