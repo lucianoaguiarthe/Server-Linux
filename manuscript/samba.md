@@ -24,7 +24,7 @@
 
 Para instalação do Samba devemos baixar os pacotes: samba, kerbero, smbcliente e winbind, conforme comando a seguir:
 
-<h4 align="middle">**apt-get install samba krb5-config winbind smbclient**</h4>
+**<h4 align="middle">apt-get install samba krb5-config winbind smbclient</h4>**
 
 Ao final da instalação são solicitadas informações sobre configuração do kerbero. A primeira tela Fig. 03, solicita qual o nome do domínio, o qual configuraremos <b>aluno.com.br</b>.
 
