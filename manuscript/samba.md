@@ -17,7 +17,7 @@
 
 <p style="text-align: justify;">É importante pontuar que a memória reservada para as máquinas virtuais foram de 1255 MB, todavia podendo diminuir este tamanho, conforme configuração da máquina que estará executando o Appliance. Podemos observar a alocação de memória desejada na Fig. 02.</p>
 
-![](images/samba/02_virtualbox.png)
+<p align="center"><img src="images/samba/02_virtualbox.png"  width="800" height="493" align="middle"/></p>
 <h4 align="middle">Figura 02 - Alocação de Memória VM</h4>
 
 ## INSTALAÇÃO SAMBA
