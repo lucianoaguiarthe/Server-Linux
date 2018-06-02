@@ -71,7 +71,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 <h4 align="middle">Figura 09 - Teste Samba</h4>
 
 <p style="text-align: justify;">Faz-se necessário copiar o arquivo gerado pelo kerberos durante o aprovisionamento do domínio para a pasta <b>etc</b>:</p>
-<h4 align="middle">cp /var/lib/samba/private/krb5.conf /etc/</h4>
+<h4 align="middle">mv /var/lib/samba/private/krb5.conf /etc/</h4>
 
 <p style="text-align: justify;">O administrador do sistema deverá derrubar todos os serviços do samba, objetivando alterar configurações, conforme comando abaixo:</p>
 <h4 align="middle">systemctl stop smbd.service nmbd.service winbind.service </h4>
@@ -151,7 +151,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Vamos criar uma Unidade Organizacional chamada nassau, desmarque a opção proteger contêiner, conforme Fig. 20:</p>
 
-![](images/samba/24_create_ou.png)
+<img src="images/samba/24_create_ou.png"  width="450" height="384" align="middle"/>
 <h4 align="middle">Figura 20 - Unidade Organizacional</h4>
 
 <p style="text-align: justify;">Para cadastrar um usuário no domínio devemos clicar com o botão direito em cima da Unidade Organizacional nassau e no menu suspenso selecionar Novo => Usuário.</p>
