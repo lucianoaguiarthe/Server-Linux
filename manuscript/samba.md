@@ -161,8 +161,8 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Na janela de cadastro do usário, preencha os campos de nome e usuário, conforme Fig. 22. Para cadastrar um usuário no domínio, devemos clicar com o botão direito em cima da Unidade Organizacional nassau e no menu suspenso selecionar Novo => Usuário.</p>
 
-<img src="images/samba/26_create_user.png"  width="450" height="383" align="middle"/>
-<img src="images/samba/27_create_user.png"  width="450" height="386" align="middle"/>
+<p align="center"><img src="images/samba/26_create_user.png"  width="450" height="383" align="middle"/>
+<img src="images/samba/27_create_user.png"  width="450" height="386" align="middle"/></p>
 <h4 align="middle">Figura 22 - Cadastro Usuário</h4>
 
 <p style="text-align: justify;">Com o objetivo de implementar algumas restrições no sistema operacional dos usuários, devemos criar as Group Police-GPO, as mesmas possuem diversas implementações para personalização dos sistemas operacionais que fazem parte do domínio, como restrição ao painel de controle e configuração de rede. É importante pontuar que tal configuração é idêntica no Windows Server, todavia a possibilidade desta implementação no samba só veio a partir da versão 4.</p>
@@ -198,7 +198,7 @@ Ao concluir a instalação devemos renomear o arquivo principal de configuraçã
 
 <p style="text-align: justify;">Ao tentarmos acessar as configurações de rede será apresentado uma tela de autenticação (Fig. 28). Considerando que o usuário <b>pedro</b> não tem permissão de acesso a estas configurações de rede</p>
 
-<img src="images/samba/36_client_edit_lan.png"  width="300" height="258" align="middle"/>
+<p align="center"><img src="images/samba/36_client_edit_lan.png"  width="300" height="258" align="middle"/></p>
 <h4 align="middle">Figura 28 - Configurações de Rede</h4>
 
 
