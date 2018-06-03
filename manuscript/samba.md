@@ -6,9 +6,9 @@
 * <b>Winbind</b> -  Proporciona uma integração de usuários Windows com o samba;<p>
 * <b>Smbclient</b> – Permite acessar compartilhamentos em outras máquinas.<p>
 
-<p align="justify">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste, criei um Appliance no endereço:</p>
+<p align="justify">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste, criei um Appliance no link abaixo:</p>
 
-https://drive.google.com/open?id=1k_6UyI9RjKqrBUSAVVpLnftYZu6_9aI7
+[Appliance Samba](https://drive.google.com/open?id=1k_6UyI9RjKqrBUSAVVpLnftYZu6_9aI7) 
 
 <p align="justify">Este Appliance terá um servidor Samba <b>samba-dc</b>, um cliente para administrar graficamente o Samba a máquina <b>RSAT-PC</b>, no diretório c:\samba encontra-se o instalador, e a máquina <b>Cliente-PC</b>, para testes com o cliente, conforme diagrama abaixo:</p>
 
