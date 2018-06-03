@@ -87,7 +87,7 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 
 <p align="justify">Para realizar os testes na zona de pesquisa inversa basta digitar o IP do host cadastrando na zona de pesquisa inversa após o comando nslookup, conforme exemplo abaixo:</p>
 
-<p align="center"><img src="images/teste-inverso.png"  width="900" height="175" align="middle"/></p>
+<p align="center"><img src="images/teste-inverso.png"  width="700" height="136"/></p>
 
 
 <h2 align="middle">Configuração DNS Secundário</h2>
