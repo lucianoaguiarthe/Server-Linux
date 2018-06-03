@@ -1,8 +1,8 @@
 # Propósito deste Material
 
-Tem como objetivo apresentar, de forma simples e direta, como o Administrador de Sistemas Linux pode configurar serviços neste ambiente utilizando como base a distribuição Debian 9.
+<p align="justify">Tem como objetivo apresentar, de forma em um contexto prático e conceitual, como o Administrador de Sistemas pode configurar serviços em ambiente Linux utilizando como base a distribuição Debian 9.4.</p>
 
-Será abordado neste material a configuração dos seguintes serviços:
+<p align="justify">Será abordado neste material a configuração dos seguintes serviços:</P>
 	
 	* Serviços de Resolução de Nome Bind 9;
 	* Servidor Web Apache 2;

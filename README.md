@@ -1,7 +1,7 @@
 
 <p align="center"><img src="manuscript/images/logo2.png"  width="850" height="157" align="middle"/></p>
 
-<p align="justify">Esse material tem como objetivo apresentar a configuração dos Serviços em Ambiente Linux utilizando a Distribuição Debian 9.</p>
+<p align="justify">Esse material tem como objetivo apresentar a configuração de alguns Serviços em Ambiente Linux utilizando uma abordagem prática, foi adota a distribuição Debian 9.4 ao longo de todas as unidades.</p>
 
 > Autor: **[Luciano de Aguiar Monteiro](https://github.com/lucianoaguiarthe)**
 
