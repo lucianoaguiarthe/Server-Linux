@@ -72,8 +72,7 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 <h2 align="middle">Configurando uma Zona de Pesquisa Inversa</h2>
 
 <p align="justify">A zona de pesquisa inversa tem a função de traduzir endereço IP para nome, as zonas de pesquisa inversa podem ser necessárias para certos aplicativos seguros que exigem a validação de endereços IP. Para criarmos uma zona de pesquisa inversa sempre utilizaremos o mesmo arquivo de configuração de zona que é o <b>named.conf.local</b>, lembrando que foi o mesmo arquivo que você configurou a zona de pesquisa direta aluno.com.br, abra o arquivo named.conf.local localizado no diretório <b>/etc/bind</b>, e deixe-o conforme abaixo:</p>
-
-![](images/zona-inversa.png)
+<p align="center"><img src="images/zona-inversa.png"  width="700" height="113"/></p>
 <h4 align="middle">Criação do Arquivo de Registro da Zona de Pesquisa</h4>
 
 <p align="justify">Para criação do arquivo db.5.168.192 aproveitaremos a estrutura do arquivo db.aluno.com.br, já que o arquivo de registro da zona de pesquisa inversa possui o mesmo cabeçalho, desta forma realizaremos uma cópia do mesmo, só lembrando que para isso você deverá está no diretório /etc/bind</p>
