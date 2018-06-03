@@ -68,7 +68,7 @@ https://drive.google.com/open?id=1k_6UyI9RjKqrBUSAVVpLnftYZu6_9aI7
 
 <h4 align="middle">Figura 08 - Arquivo smb.conf</h4>
 
-<p align="justify">Ao concluir toda a configuração podemos fazer um teste no samba utilizando o smbcliente, conforme apresentado na Fig. 09</p>
+<p align="justify">Ao concluir  toda a  configuração  podemos  fazer um teste no samba utilizando o  smbcliente, conforme apresentado na Fig. 09</p>
 
 <img src="images/samba/13_teste_samba.png"  width="700" height="278" align="middle"/>
 <h4 align="middle">Figura 09 - Teste Samba</h4>
