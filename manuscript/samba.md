@@ -1,6 +1,6 @@
 # SERVIÇO SAMBA
 <p align="justify">O Samba é um serviço disponível para Sistemas Operacionais Linux que permite compartilhar diretórios e impressoras, bem como implementar um controlador de domínio. A primeira versão do Samba foi disponibilizada em 1992, e escrita por Andrew Tridgell, um Australiano que na época era estudante de ciências da computação, atualmente encontra-se em sua versão 4, a grande novidade desta versão são as implementações de Diretivas de Grupos. Para o seu funcionamento necessita da instalação dos seguintes pacotes:</p>
-* <b>Samba</b> – Que disponibiliza o samba propriamente dito;<p>
+*  <b>Samba</b> – Que disponibiliza o samba propriamente dito;<p>
 * <b>Kerberos</b> – Protocolo desenvolvido para prover altenticação em aplicações e serviços cliente/servidor;<p>
 * <b>Winbind</b> -  Proporciona uma integração de usuários Windows com o samba;<p>
 * <b>Smbclient</b> – Permite acessar compartilhamentos em outras máquinas.<p>
