@@ -97,7 +97,7 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 <p align="justify">Para que possamos realizar a prática de configuração de um DNS Secundário devemos preparar o nosso ambiente. Inicialmente clone a Máquina Virtual <b>Debian 9.3 - Server</b>, para isso selecione a VM, e no menu <b>Máquina escolha</b> o item <b>Clonar</b>, conforme apresentado na imagem abaixo:
 </p>
 
-![](images/clone-vm.png)
+<p align="center"><img src="images/clone-vm.png"  width="750" height="538" align="middle"/></p>
 
 
 <p align="justify">Atribua o nome para a nova Máquina Virtual de <b>Debian 9.3 - Secundário</b>, marque a opção reinicializar endereço MAC, na janela seguinte marque a opção <b>Clone Completo</b> e conclua o clone da VM.</p>
