@@ -104,7 +104,7 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 
 <p align="justify">Devemos também ajustar o endereçamento ip do DNS Secundário, acesso o diretório <b>/etc/network</b> e modifique o arquivo <b>interfaces</b>, conforme descrito a seguir:</p>
 
-![](images/interfaces.png)
+<p align="center"><img src="images/interfaces.png"  width="650" height="288" align="middle"/></p>
 
 <p align="justify">Para finalizar altere o arquivo <b>/etc/resolv.conf</b> apontado para o novo DNS 192.168.5.2, e  o arquivo <b>/etc/dhcp/dhclient.conf</b> nas linhas conforme descrito a seguir:</p>
 
