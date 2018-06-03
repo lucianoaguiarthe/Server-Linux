@@ -81,13 +81,13 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 
 <p align="justify">Após a realização da cópia abra o arquivo db.5.168.192 com um editor de sua preferência e altere conforme descrição abaixo:</p>
 
-![](images/db-inverso.png)
+<p align="center"><img src="images/db-inverso.png"  width="740" height="375" align="middle"/></p>
 
 <h4 align="middle">Realizando os testes da Zona de Pesquisa Inversa</h4>
 
 <p align="justify">Para realizar os testes na zona de pesquisa inversa basta digitar o IP do host cadastrando na zona de pesquisa inversa após o comando nslookup, conforme exemplo abaixo:</p>
 
-![](images/teste-inverso.png)
+<p align="center"><img src="images/teste-inverso.png"  width="900" height="175" align="middle"/></p>
 
 
 <h2 align="middle">Configuração DNS Secundário</h2>
