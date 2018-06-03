@@ -10,7 +10,7 @@
 
 [Appliance Samba](https://drive.google.com/open?id=1k_6UyI9RjKqrBUSAVVpLnftYZu6_9aI7) 
 
-<p align="justify">Este Appliance terá um servidor Samba <b>samba-dc</b>, um cliente para administrar graficamente o Samba a máquina <b>RSAT-PC</b>, no diretório c:\samba encontra-se o instalador, e a máquina <b>Cliente-PC</b>, para testes com o cliente, conforme diagrama abaixo:</p>
+<p align="justify">Este Appliance terá um servidor Samba <b>samba-dc</b>, um cliente para administrar graficamente o Samba, a máquina <b>RSAT-PC</b>, no diretório c:\samba encontra-se o instalador, e a máquina <b>Cliente-PC</b>, para testes com o cliente, conforme diagrama abaixo:</p>
 
 ![](images/samba/01_diagrama-samba.png)
 <h4 align="middle">Figura 01 - Diagrama de Rede</h4>
