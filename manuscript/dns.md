@@ -59,15 +59,15 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 
 <p align="justify">Geralmente os primeiros testes são a verificação do servidor de nomes,  para isto devemos acrescentar uma opção no comando nslookup conforme descreverei abaixo:</p>
  
-![](images/teste-nome.png)
+<p align="center"><img src="images/teste-nome.png"  width="700" height="190" align="middle"/></p>
 
-![](images/teste-ns.png)
+<p align="center"><img src="images/teste-ns.png"  width="700" height="201" align="middle"/></p>
 
-![](images/teste-mx.png)
+<p align="center"><img src="images/teste-mx.png"  width="700" height="189" align="middle"/></p>
 
-![](images/teste-a.png)
+<p align="center"><img src="images/teste-a.png"  width="700" height="204" align="middle"/></p>
  
-![](images/teste-cname.png)
+<p align="center"><img src="images/teste-cname.png"  width="700" height="211" align="middle"/></p>
 
 <h2 align="middle">Configurando uma Zona de Pesquisa Inversa</h2>
 
