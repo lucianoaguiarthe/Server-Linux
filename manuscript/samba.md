@@ -1,5 +1,6 @@
 # SERVIÇO SAMBA
 <p align="justify">O Samba é um serviço disponível para Sistemas Operacionais Linux que permite compartilhar diretórios e impressoras, bem como implementar um controlador de domínio. A primeira versão do Samba foi disponibilizada em 1992, e escrita por Andrew Tridgell, um Australiano que na época era estudante de ciências da computação, atualmente encontra-se em sua versão 4, a grande novidade desta versão são as implementações de Diretivas de Grupos. Para o seu funcionamento necessita da instalação dos seguintes pacotes:</p>
+
 *  <b>Samba</b> – Que disponibiliza o samba propriamente dito;<p>
 * <b>Kerberos</b> – Protocolo desenvolvido para prover altenticação em aplicações e serviços cliente/servidor;<p>
 * <b>Winbind</b> -  Proporciona uma integração de usuários Windows com o samba;<p>
@@ -109,6 +110,15 @@ https://drive.google.com/open?id=1k_6UyI9RjKqrBUSAVVpLnftYZu6_9aI7
 
 <p align="justify">O serviço samba pode ser administrado diretamente no host em que está instalado o serviço, ou podemos administrá-lo remotamente por meio do software RSAT instalado em um computador com sistema operacional Windows que esteja previamente autenticado no domínio. Você verá que a configuração passa a ser igual a do Windows Server. Em nosso diagrama (Fig. 01), iremos administrar o samba a partir do host RSAT-PC, que tem o IP 192.168.5.10.</p>
 <p style="text-align: justify;">
+
+<p align="justify">Segue abaixo endereços para instalação do RSAT nas diversas versões de Windows, no nosso laboratório já realizei o download prévio:</p>
+
+### DOWNLOAD
+
+[Windows 10](https://www.microsoft.com/pt-BR/download/details.aspx?id=45520)<p>
+[Windows 8.1](https://www.microsoft.com/pt-BR/download/details.aspx?id=39296)<p>
+[Windows 8](https://www.microsoft.com/pt-BR/download/details.aspx?id=28972)<p>
+[Windows 7](https://www.microsoft.com/pt-BR/download/details.aspx?id=7887)
 
 <p align="justify">Antes de instalar o <b>RSAT</b> devemos ingressar o host no domínio. Acesse o painel de controle e vá em sistemas em segurança => sistemas, será exibido uma janela conforme Fig. 12:</p>
 
