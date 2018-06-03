@@ -7,6 +7,8 @@
 
 <p style="text-align: justify;">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste, criei um Appliance no endereço:</p>
 
+https://drive.google.com/open?id=1k_6UyI9RjKqrBUSAVVpLnftYZu6_9aI7
+
 <p style="text-align: justify;">Este Appliance terá um servidor Samba <b>samba-dc</b>, um cliente para administrar graficamente o Samba a máquina <b>RSAT-PC</b>, no diretório c:\samba encontra-se o instalador, e a máquina <b>Cliente-PC</b>, para testes com o cliente, conforme diagrama abaixo:</p>
 
 ![](images/samba/01_diagrama-samba.png)
@@ -45,7 +47,7 @@ E ainda é solictado o ip do servidor administrativo que também será o endere�
 
 Ao concluir a instalação devemos renomear o arquivo principal de configuração do samba o <b>smb.conf</b>, para que ao aprovisionar o domínio, seja gerado um novo smb.conf, de acordo com o comando a seguir:
 
-<h4 align="middle">cp /etc/samba/smb.conf /etc/samba/smb.conf.original</h4>
+<h4 align="middle">mv /etc/samba/smb.conf /etc/samba/smb.conf.original</h4>
 
 <p style="text-align: justify;">O passo seguinte deveremos configurar o samba como controlador de domínio, é importante pontuar que o nome do nosso domínio será <b>aluno.com.br</b> e o nome da máquina q está executando o samba é <b>samba-dc</b>, através do comando <b>samba-tool</b> conforme apesentado na Fig. 06:</p>
 <p style="text-align: justify;"><b>IMPORTANTE: A senha cadastrada deve possuir um nível alto de complexidade, use número, letras e símbolos, caso coloque uma senha simples dará um erro no final da instalação</b></p>
