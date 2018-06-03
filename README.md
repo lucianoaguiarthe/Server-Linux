@@ -1,6 +1,6 @@
-# Manuais de Configuração de Serviços Linux
+<h1 align="middle"> Manuais de Configuração de Serviços Linux</h1>
 
-Esse material tem como objetivo apresentar a configuração dos Serviços em Ambiente Linux utilizando a Distribuição Debian 9.
+<p align="justify">Esse material tem como objetivo apresentar a configuração dos Serviços em Ambiente Linux utilizando a Distribuição Debian 9.</p>
 
 > Autor: **[Luciano de Aguiar Monteiro](https://github.com/lucianoaguiarthe)**
 
