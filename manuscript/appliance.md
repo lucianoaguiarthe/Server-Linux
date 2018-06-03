@@ -33,7 +33,9 @@ https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=shari
 
 <p align="justify">O firewall da rede <B>srv-nassau</B> não possui ambiente gráfico instalado e já vem com dois usuários previamente criados o <b>root</b> (administrador do sistema) e o usuário <b>aluno</b>, ambos possuem a senha <b>123456</b>, o firewall pode ser acessado via ssh a partir do <b>cliente-nassau</b> pelo comando ssh root@192.168.5.1 (usando a senha 123456), conforme podemos observar na figura 2:</p>
 
-![](images/log-client.png)
+
+<p align="center"><img src="images/log-client.png"  width="750" height="316" align="middle"/></p>
+
 <h4 align="middle">Figura 2</h4>
 
 <p align="justify">O host <b>cliente-nassau</b> vem configurado com um ambiente gráfico mais leve chamado LXDE, o mesmo está configurado para receber ip automaticamente do firewall, o usuário para autenticação no ambiente gráfico é <b>aluno</b> e senha <b>123456</b>, a senha do usuário root também é <b>123456</b>.
