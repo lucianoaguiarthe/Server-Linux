@@ -118,13 +118,13 @@ ns02		IN	A	192.168.5.2</h4>
 
 <p align="justify">O arquivo db.aluno.com.br depois de modificado deve ficar conforme imagem abaixo:</p>
 
-![](images/db-aluno-secundario.png)
+<p align="center"><img src="images/db-aluno-secundario.png"  width="740" height="412" align="middle"/></p>
 
 <h3 align="middle">Configurando DNS Secundário</h3>
 
 <p align="justify">Abra a nova VM criada, e acesse o diretório de configuração do bind <b>/etc/bind</b>, considerando que clonamos a máquina já com algumas configurações de DNS devemos apagar as zonas criadas anteriormente no arquivo <b>named.conf.local</b>, e criar a zona secundária de acordo com imagem a seguir:</p>
 
-![](images/zona-secundaria.png)
+<p align="center"><img src="images/zona-secundaria.png"  width="700" height="132" align="middle"/></p>
 
 <p align="justify">O arquivo db.aluno.com.br será copiado do DNS Primário, todavia por questão de organização devemos criar um diretório para salvar as zonas secundárias, este diretório será chamado de <b>slave</b>, e devemos criá-lo dentro do diretório <b>/etc/bind</b> conforme comando a seguir:</p>
 <h3 align="middle">mkdir slave</h3>
