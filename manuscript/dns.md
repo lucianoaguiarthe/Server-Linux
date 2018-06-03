@@ -139,7 +139,7 @@ ns02		IN	A	192.168.5.2</h4>
 
 <p align="justify">Saberemos se o DNS Secundário está funcionando, quando realizarmos uma consulta ao mesmo através do <b>nslookup</b> e fazer a resolução do nome:</p>
 
-![](images/teste-secundario.png)
+<p align="center"><img src="images/teste-secundario.png"  width="700" height="144" align="middle"/></p>
 
 
 
