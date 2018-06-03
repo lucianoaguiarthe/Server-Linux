@@ -46,7 +46,8 @@
 
 <p align="justify">Após a realização da cópia abra o arquivo db.aluno.com.br com um editor de sua preferência (comando: nano db.aluno.com.br) e altere conforme descrição abaixo:</p>
 
-![](images/db-aluno.png)
+<p align="center"><img src="images/db-aluno.png"  width="700" height="345" align="middle"/></p>
+
 
 Salve o arquivo e reinicie o serviço com o comando abaixo:
 
