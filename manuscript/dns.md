@@ -63,7 +63,7 @@ Salve o arquivo e reinicie o serviço com o comando abaixo:
 
 <p align="center"><img src="images/teste-ns.png"  width="700" height="201" align="middle"/></p>
 
-<p align="center"><img src="images/teste-mx.png"  width="700" height="189" align="middle"/></p>
+<p align="center"><img src="images/teste-mx.png"  width="730" height="197" align="middle"/></p>
 
 <p align="center"><img src="images/teste-a.png"  width="700" height="204" align="middle"/></p>
  
