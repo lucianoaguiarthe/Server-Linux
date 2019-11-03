@@ -1,6 +1,6 @@
 # Appliance
 <p align="justify">Para que o aluno possa configurar o ambiente proposto no presente documento o mesmo deve possuir um computador com no mínimo Processador <b>Quadcore</b> e Memória RAM de <b>3 Giga</b>.
-Realizar o download do aplicativo <a href = https://www.virtualbox.org/wiki/Downloads>VirtualBox</a>, conforme seu sistema operacional (A versão utilizada para criar o Appliance foi a 6.0.14).</p>
+Realizar o download do aplicativo <a href = "https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a>, conforme seu sistema operacional (A versão utilizada para criar o Appliance foi a 6.0.14).</p>
 
 
 Baixar o arquivo do Appliance no link descrito a seguir:
