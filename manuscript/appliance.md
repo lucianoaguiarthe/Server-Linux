@@ -1,11 +1,11 @@
 # Appliance
 <p align="justify">Para que o aluno possa configurar o ambiente proposto no presente documento o mesmo deve possuir um computador com no mínimo Processador <b>Quadcore</b> e Memória RAM de <b>3 Giga</b>.
-Realizar o download do aplicativo <a href = "https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a>, conforme seu sistema operacional (A versão utilizada para criar o Appliance foi a 6.0.14).</p>
+Realizar o download do aplicativo <a href = "https://www.virtualbox.org/wiki/Downloads" target="blank">VirtualBox</a>, conforme seu sistema operacional (A versão utilizada para criar o Appliance foi a 6.0.14).</p>
 
 
 Baixar o arquivo do Appliance no link descrito a seguir:
 
-<p align="justify"><a href="https://drive.google.com/file/d/1U2rafGda8JGtTnvQG5ywv9GddCabGBF_/view?usp=sharing" target="_blank"> Appliance </a></p>
+<p align="justify"><a href="https://drive.google.com/file/d/1U2rafGda8JGtTnvQG5ywv9GddCabGBF_/view?usp=sharing" target="blank"> Appliance </a></p>
 
 <p align="justify">O Appliance é um arquivo que vem empacotado máquinas virtuais prontas para uso, em nosso laboratório existem duas, o server-linux e o debian-client.</p>
 
