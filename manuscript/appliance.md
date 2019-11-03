@@ -26,7 +26,7 @@ https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=shari
 
 ![](images/firewall.png)
 
-<p align="center"><img src="images/Basic-Network.png"  width="1000" height="687" align="middle"/></p>
+<p align="center"><img src="images/Basic-Network.png"  width="700" height="481" align="middle"/></p>
 <h4 align="middle">Figura 1 - Diagrama de Rede</h4>
 
 ## ADMINISTRAÇÃO DOS SISTEMAS
