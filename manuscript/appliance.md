@@ -24,7 +24,7 @@ https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=shari
 
 <p align="justify">Com o objetivo de deixar o host <b>cliente-nassau</b> acessando a internet foi criado um pequeno script no srv-nassau para compartilhamento da conexão da interface enp0s8, localizado no diretório /etc/init.d chamado fw_nassau, conforme descrito abaixo:</p>
 
-<p align="center"><img src="images/firewall.png"  width="700" height="146" align="middle"/></p>
+<p align="center"><img src="images/firewall.png"  width="650" height="136" align="middle"/></p>
 
 <p align="center"><img src="images/Basic-Network.png"  width="650" height="447" align="middle"/></p>
 <h4 align="middle">Figura 1 - Diagrama de Rede</h4>
