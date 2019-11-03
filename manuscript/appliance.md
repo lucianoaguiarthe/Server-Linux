@@ -33,7 +33,7 @@ https://drive.google.com/file/d/1C3kqXup-NJL-1whBl_AF5JKpLljcKcjo/view?usp=shari
 <p align="justify">O firewall da rede <B>server-linux</B> não possui ambiente gráfico instalado e já vem com dois usuários previamente criados o <b>root</b> (administrador do sistema) e o usuário <b>aluno</b>, ambos possuem a senha <b>123456</b>, o firewall pode ser acessado via ssh a partir do <b>debian-client</b> pelo comando ssh root@192.168.5.1 (usando a senha 123456), conforme podemos observar na figura 2:</p>
 
 
-<p align="center"><img src="images/log-client.png"  width="750" height="316" align="middle"/></p>
+<p align="center"><img src="images/login.png"  width="650" height="290" align="middle"/></p>
 
 <h4 align="middle">Figura 2</h4>
 
